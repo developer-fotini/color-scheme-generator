@@ -78,6 +78,31 @@ select, button {
     font-size: 0.9rem;
 }
 
+@media (max-width:420px){
+    h1 {
+        font-size: 1.5em;
+        padding: 0.5em;
+    }
+}
+
+@media (max-width: 733px){
+    .app-container {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        padding: 3em 0;
+        border-radius: 0;
+    }
+
+    select, button {
+        width: 80%;
+    }
+
+    .color-column {
+        width: 80vw;
+    }
+}
+
 @media (min-width: 1034px){
 
     /*options section*/
