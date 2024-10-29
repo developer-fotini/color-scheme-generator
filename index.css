@@ -1,0 +1,134 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #1C1C1C;
+    color: #1C1C1C;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+.app-container {
+    background-color: #fbf5f5;
+    width: 50%;
+    border-radius: 5px;
+    margin: 4em auto;
+    padding: 5em 3em;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.9rem;
+}
+
+/*options section*/
+
+.form-content {
+    font-family: inherit;
+    border: 2px solid #D1D5DB;
+    border-radius: 3px;
+    background-color: white;
+}
+
+.form-content:hover, .form-content:focus {
+    background-color: #fafafa;
+    cursor: pointer;
+}
+
+input {
+    height: 3.2em;
+}
+
+select, button {
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: 0.8em;
+    margin: 1em auto;
+    font-size: 0.9em;
+}
+
+.options-container {
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+
+/*color rows section*/
+
+.color-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em
+}
+
+.color-column {
+    height: 10vh;
+    width: 50vw;
+    border-radius: 2px;
+}
+
+.hex {
+    background-color: white;
+    border-radius: 3px;
+    text-align: center;
+    padding-top: 0.4em;
+    margin: 0 auto;
+    padding-bottom: 0.5em;
+    font-size: 0.9rem;
+}
+
+@media (min-width: 1034px){
+
+    /*options section*/
+
+    h1 {
+        font-size: 2.5em;
+    }
+    .options-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+    }
+
+    select, button {
+           padding: 1em;
+        }   
+
+    select {
+        text-align: left;
+    }
+
+    input {
+        height: 3.9em;
+        width: 3.9em;
+    }
+
+    #select-container {
+        width: 30vw;
+    }
+    
+    #button-container {
+        width: 20vw;
+    }
+
+    
+      /*color columns section*/
+
+
+    .color-container {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .color-column {
+        height: 40vh;
+        width: 8vw;
+    }
+
+    
+
+}
