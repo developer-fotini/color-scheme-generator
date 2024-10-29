@@ -1,24 +1,15 @@
-let seedColor = document.getElementById("seed-color")
-let schemeMode = document.getElementById("choose-mode")
 const colorContainer = document.getElementById("color-container")
 const getSchemeBtn = document.getElementById("get-scheme-btn")
 
-seedColor.addEventListener("change", function(e){
-    seedColor = e.target.value.substring(1)
-   })
-   
-schemeMode.addEventListener("change", function(e){
- schemeMode = e.target.value
-
-})
-   
 getSchemeBtn.addEventListener("click", function(e){
     e.preventDefault()
     fetchScheme()
 })
 
-
 function fetchScheme() {
+    const seedColor = document.getElementById("seed-color").value.substring(1)
+    const schemeMode = document.getElementById("choose-mode").value
+
     fetch(`https://www.thecolorapi.com/scheme?hex=${seedColor}&mode=${schemeMode}&count=5`)
     .then(response => response.json())
     .then(data => {
